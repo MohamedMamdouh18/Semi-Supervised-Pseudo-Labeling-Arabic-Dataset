@@ -80,10 +80,14 @@ Our approach was based on [Refrence](https://doi.org/10.3390/app11052434)
     - about ~1000 review was still unlabeled.
     - only about ~400 review from total ~5400 were mislabeled.
 - Using **LIME** Framework to explain the predictions for each model on both types of unlabeled reviews we found:
-    - some of the mislabeled reviews maybe wrong labeled from the beginning -in the original dataset- like this example:
+    - Some of the mislabeled reviews maybe wrong labeled from the beginning -in the original dataset- like this example:
+      
       ![Capture](https://github.com/MohamedMamdouh18/Semi-Supervised-Pseudo-Labeling-Arabic-Dataset/assets/63814228/a79fb2a7-7ea6-487d-9057-3be2bbcaa26e)
+      
     here we can see that the original label was 0 -negative- and the ensemble of the three models predicted 1 -positive-
-    - some of the left unlabeled reviews was vague and unclear and some of them seemed to be neutral so the models didn't agree on one prediction like this example:
+  
+    - Some of the left unlabeled reviews was vague and unclear and some of them seemed to be neutral so the models didn't agree on one prediction like this example:
+      
       ![Capture](https://github.com/MohamedMamdouh18/Semi-Supervised-Pseudo-Labeling-Arabic-Dataset/assets/63814228/bf4bb4ba-c74a-4c02-a6ef-2c70fdd52c74)
 
 ## Authors
