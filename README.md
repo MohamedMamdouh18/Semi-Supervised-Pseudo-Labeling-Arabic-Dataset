@@ -67,7 +67,7 @@ After tokenizing each review using white space tokenizer , ARAVEC model pretrain
 
 Our approach was based on [Refrence](https://doi.org/10.3390/app11052434)
 
-![Capture](https://github.com/MohamedMamdouh18/Semi-Supervised-Pseudo-Labeling-Arabic-Dataset/assets/63814228/30120164-0aac-4fcb-ac3a-606826334340)
+![Capture](https://github.com/MohamedMamdouh18/Semi-Supervised-Pseudo-Labeling-Arabic-Dataset/assets/63814228/83d07cbd-4c4e-4652-9985-c2875432ebd6)
 
 - Depending on one model to annotate a dataset even with relatively high accuracy(80%) makes it an infeasible solution as wrong annotations might lead to failure of any model that uses the dataset.
 - Instead an Ensemble of 3 classifiers (Logistic Regression, Linear SVM and GRU) is used for annotation.
@@ -90,14 +90,15 @@ Our approach was based on [Refrence](https://doi.org/10.3390/app11052434)
     - only about ~400 review from total ~5400 were mislabeled.
 - Using **LIME** Framework to explain the predictions for each model on both types of reviews we found:
     - Some of the mislabeled reviews maybe wrong labeled from the beginning -in the original dataset- like this example:
-      
-      ![Capture](https://github.com/MohamedMamdouh18/Semi-Supervised-Pseudo-Labeling-Arabic-Dataset/assets/63814228/a79fb2a7-7ea6-487d-9057-3be2bbcaa26e)
-      
+
+      ![Capture](https://github.com/MohamedMamdouh18/Semi-Supervised-Pseudo-Labeling-Arabic-Dataset/assets/63814228/39fa1caa-c17d-4228-b7e0-45426fcbb524)
+
     here we can see that the original label was 0 -negative- and the ensemble of the three models predicted 1 -positive-
   
     - Some of the left unlabeled reviews was vague and unclear and some of them seemed to be neutral so the models didn't agree on one prediction like this example:
+
+      ![Capture](https://github.com/MohamedMamdouh18/Semi-Supervised-Pseudo-Labeling-Arabic-Dataset/assets/63814228/8c92b8c1-a634-4855-a3d6-d45df8acad6b)
       
-      ![Capture](https://github.com/MohamedMamdouh18/Semi-Supervised-Pseudo-Labeling-Arabic-Dataset/assets/63814228/bf4bb4ba-c74a-4c02-a6ef-2c70fdd52c74)
       - GRU Model predicted 0 -negative-
       - RL & Linear SVM predicted 1 -positive-
 
