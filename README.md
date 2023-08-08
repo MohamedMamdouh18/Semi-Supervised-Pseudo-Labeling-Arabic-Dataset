@@ -11,6 +11,7 @@ This repository a Semi-Supervised approach to perform sentiment annotation for a
 - [Methodology](#Methodology)
     - [Preprocessing](#Preprocessing)
     - [Embeddings](#Embeddings)
+    - [Tune Hyperparameters](#Tune-Hyperparameters)
     - [Proposed Architecture](#Proposed-Architecture)
 - [Results & Discussion](#Results&Discussion)
 - [Authors](#Authors)
@@ -56,6 +57,12 @@ After tokenizing each review using white space tokenizer , ARAVEC model pretrain
 - #### Embeddings for GRU model
   Using ARAVEC embeddings with non-trainable embedding layer yielded the same results as using trainable embedding layer so our final approach was to pass inputs through a **trainable** embedding layer to the gru model.
 
+### Tune Hyperparameters
+
+- For LR, we use RandomizedSearchCV to search over a large scale of parameters. This helps us to narrow down the search range and find a good set of parameters for GridSearchCV to use.
+- For LinearSVM, we did the same but we used HalvingRandomSearchCV instead of RandomizedSearchCV.
+- For GRU Model, it took much time using HalvingRandomSearchCV so we tried different architectures until we got the current one.
+
 ### Proposed Architecture
 
 Our approach was based on [Refrence](https://doi.org/10.3390/app11052434)
@@ -97,5 +104,5 @@ Our approach was based on [Refrence](https://doi.org/10.3390/app11052434)
 ## Authors
 
 - [@Mohamed Mamdouh](https://github.com/MohamedMamdouh18)
-- @Mustafa El-Tawy
+- [@Mustafa El-Tawy](https://github.com/Mostafa424)
 - [@Omar Khairat](https://github.com/OmarKhairat)
