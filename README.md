@@ -13,7 +13,7 @@ This repository a Semi-Supervised approach to perform sentiment annotation for a
     - [Embeddings](#Embeddings)
     - [Tune Hyperparameters](#Tune-Hyperparameters)
     - [Proposed Architecture](#Proposed-Architecture)
-- [Results & Discussion](#Results&Discussion)
+- [Results & Discussion](#Results-&-Discussion)
 - [Authors](#Authors)
 
 ## Motivation
