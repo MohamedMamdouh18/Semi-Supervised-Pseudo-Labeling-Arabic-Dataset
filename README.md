@@ -92,10 +92,15 @@ Our approach was based on [Refrence](https://doi.org/10.3390/app11052434)
     - Some of the mislabeled reviews maybe wrong labeled from the beginning -in the original dataset- like this example:
 
       ![Capture](https://github.com/MohamedMamdouh18/Semi-Supervised-Pseudo-Labeling-Arabic-Dataset/assets/63814228/39fa1caa-c17d-4228-b7e0-45426fcbb524)
+      
+        - here we can see that the original label was 0 -negative- and the ensemble of the three models predicted 1 -positive- :
 
-    here we can see that the original label was 0 -negative- and the ensemble of the three models predicted 1 -positive-
+          ![Capture](https://github.com/MohamedMamdouh18/Semi-Supervised-Pseudo-Labeling-Arabic-Dataset/assets/63814228/d8cecfa3-728b-4659-9a25-6cb4b1798ccb)
+
+        - And the explanation tells us that the three models are affected by the word -الاسلوب- which is not accurate.
+      
   
-    - Some of the left unlabeled reviews was vague and unclear and some of them seemed to be neutral so the models didn't agree on one prediction like this example:
+    - Some of the left unlabeled reviews was vague and unclear and some of them seemed to be neutral so the models didn't agree on one prediction like this example :
 
       ![Capture](https://github.com/MohamedMamdouh18/Semi-Supervised-Pseudo-Labeling-Arabic-Dataset/assets/63814228/8c92b8c1-a634-4855-a3d6-d45df8acad6b)
       
